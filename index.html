@@ -1,36 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <style>
-            header {
-            background-color:rgb(78, 131, 175);
-            padding: 10px;
-            font-size: 35px;
-            color: white;
-            }
-        </style>
+        <title>Login</title>
+        <link rel="icon" href="img/xmas.png">
     </head>
-    <body style="background-color:rgb(166, 198, 224)";> 
-        <header>
-            <a href="#home">Home</a> <a href="#noticias">/ Noticias</a>
-            <a href="#perfil">                          Perfil</a>
-            <img src="img/perfil.png" width="50" height="50">
-        </header>
-        <div style="background-color:rgb(255, 250, 180);width: 1200px; height:600px; margin: auto;">
-            <h1 id="home">Bem Vindo!</h1>
-            <p>Olá Usuario, Confira as Novidades:</p>
-            <p>- Ainda sem novidades</p>
+    <body style="background-color:rgb(166, 198, 224) ";>
+        <div style="background-color:rgb(78, 131, 175);width: 1000px;margin: auto;">
+            <h1 style="text-align: center;">Login</h1>
         </div>
-        <div style="background-color:rgb(255, 250, 180);width: 1200px; height:600px; margin: auto;">
-            <h1 id="noticias">Noticias</h1>
-        </div>
-        <div style="background-color:rgb(255, 250, 180);width: 1200px; height:600px; margin: auto;">
-            <h1 id="perfil">Perfil</h1>
-            <p>Data de inscrição: 01/11/2024</p>
-            <p>Nome do usuarios:</p>
+        <div style="background-color:rgb(255, 250, 180);width: 1200px; margin: auto; padding: 10px;">
+            <form action="./Corpo.html" method="get" style="text-align: center;">
+                <label for="user">Usuario:</label><br>
+                <input type="text" id="user" name="user" value=""><br>
+                <label for="senha">Senha:</label><br>
+                <input type="text" id="senha" name="senha" value=""><br><br>
+                <input type="submit" value="Enviar"><br><br>
+                <a href="cadastro.html">Não tenho conta</a><br>
+                <a href="reset.html">Esqueci a senha</a><br>
+            </form>
         </div>
     </body>
 </html>
